@@ -1,0 +1,292 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppin', sans-serif;
+    color: #ffff;
+}
+
+header {
+    width: 100%;
+}
+
+.container {
+    background-color: rgb(82, 42, 119);
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+header {
+    background-color: #333;
+    opacity: .94;
+    color: #ffff;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header p {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #ffff;
+    font-size: .8rem;
+    padding-bottom: 3px;
+}
+
+li a:hover {
+    border-bottom: rgb(82, 42, 119) 2px solid;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+
+}
+
+.main-text {
+    text-align: center;
+    margin: 10px 0 20px;
+}
+
+.main-text h1 {
+    font-size: 1.3rem;
+}
+
+.main-text p {
+    font-size: .8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.main-text a {
+    text-decoration: none;
+    color: #ffff;
+    padding: 5px;
+    border-radius: 20px;
+    border: 1.5px solid #ffff;
+    font-size: .7rem;
+    font-weight: 600;
+
+}
+
+.main-img {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 3%;
+}
+
+.img-1 {
+    max-width: 65%;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.img-3 {
+    max-width: 45%;
+    \max-height: 26%;
+    display: block;
+    background-color: aliceblue;
+    border: 3px solid rgb(160, 6, 6);
+    padding: 3px;
+    border-radius: 10px;
+
+}
+
+.img-2 {
+    display: none;
+}
+
+footer {
+    background-color: #333;
+    display: flex;
+    padding-left: px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+footer p {
+    font-size: .84rem;
+}
+
+span {
+    font-size: .5rem;
+    margin-right: 20px;
+}
+
+@media screen and (min-width:500px) {
+    .container {
+        background-color: transparent;
+        max-width: auto;
+        height: auto;
+        position: static;
+        display: block;
+    }
+
+    header {
+        overflow: hidden;
+        text-align: start;
+        padding: 10px 6rem 10px;
+    }
+
+    .logo {
+        margin-right: 20px;
+    }
+
+    nav {
+        display: flex;
+        text-align: left;
+        justify-content: left;
+        align-items: center;
+    }
+
+    nav ul,
+    nav li,
+    nav p {
+        width: auto;
+        display: inline;
+    }
+
+    nav li,
+    nav p {
+        margin-right: 2rem;
+    }
+
+    nav h1 {
+        font-size: 1.6rem;
+    }
+
+    nav p,
+    nav a {
+        font-size: .84rem;
+    }
+
+    nav a {
+        text-decoration: none;
+        padding-bottom: 3px;
+    }
+
+    nav a:hover {
+        border-bottom: rgb(82, 42, 119) 2px solid;
+    }
+
+    main {
+        height: 85vh;
+        background-color: rgb(82, 42, 119);
+        display: flex;
+        flex-direction: row;
+        padding: 60px 60px 0 10px;
+        justify-content: space-between;
+        color: #ffff;
+
+    }
+
+    .img-2 {
+        display: inline-block;
+        height: 50%;
+        max-width: 48%;
+    }
+
+    .img-1 {
+        height: 50%;
+        max-width: 55%;
+        margin-right: 4px;
+        position: relative;
+        left: 13px;
+    }
+
+    .cm {
+        display: flex;
+        position: relative;
+        right: 28%;
+        top: 5%;
+    }
+
+    .main-img {
+        display: flex;
+        padding-bottom: 4%;
+        max-width: 50%;
+        max-height: 85%;
+    }
+
+    .img-3 {
+        max-height: 60%;
+        max-width: 60%;
+        border-radius: 10px;
+        align-self: center;
+        position: relative;
+        right: 74%;
+
+    }
+
+    .main-text {
+        text-align: left;
+        margin: 70px 0 0;
+    }
+
+    .main-text h1 {
+        font-size: 1.4rem;
+
+        margin: 4px;
+    }
+
+    .main-text p {
+        font-size: .89rem;
+        font-weight: 200;
+        margin-left: 5px;
+    }
+
+    .main-text a {
+        text-decoration: none;
+        padding: 6px;
+        border-radius: 20px;
+        border: 2px solid #ffff;
+        font-size: .8rem;
+        font-weight: 400;
+        margin-left: 3px;
+    }
+
+    footer {
+        height: 10vh;
+    }
+
+    footer p {
+        font-size: 1.3rem;
+    }
+
+    span {
+        font-size: 1rem;
+    }
+}
